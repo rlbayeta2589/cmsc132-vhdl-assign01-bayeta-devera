@@ -2,12 +2,12 @@ library IEEE ;
     use IEEE.std_logic_1164.all ;                   
     use IEEE.numeric_std.all ;
 
-entity tb_buzzer is
+entity buzzer_tb is
   constant MAX_COMB: integer := 64;                 
   constant DELAY: time := 10 ns;
 end entity ; 
 
-architecture tb of tb_buzzer is                     
+architecture tb of buzzer_tb is                     
     signal alarm: std_logic;
     signal in_gates: std_logic_vector(2 downto 0);
     signal out_gates: std_logic_vector(2 downto 0);
